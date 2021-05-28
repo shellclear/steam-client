@@ -1,34 +1,32 @@
-#Play your favorite games at Steam
-
+# Play your favorite games at Steam 
 [![Docker Image CI](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml/badge.svg)](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml)
 
 This image was built to use a intel video card, so maybe you need to install some other modules if you have a AMD/Nvidia video card. However, if you have a Intel video card it will work perfectly.
 
-Do you want to know how to play?
+## Do you want to know how to play?
 
 It's very simple, follow instructions bellow and be happy!
 
 First at all, run the command bellow in your host (where docker engine is installed)
 
-$xhost +
+`$xhost +`
 
 and after that, run that command bellow if you want open the Steam client only
 
-$docker run --privileged --name steam -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=:0 shellclear/steam /usr/games/steam %U
+`$docker run --privileged --name steam -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=:0 shellclear/steam /usr/games/steam %U`
 
 or , if you want open Steam client from a terminal you'll need to run
 
-$docker run -it --privileged --name steam -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=:0 shellclear/steam bash
+`$docker run -it --privileged --name steam -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=:0 shellclear/steam bash`
 
 and inside from container you need to run
 
-#/usr/games/steam %U
+`#/usr/games/steam %U`
 
-INFO: I set keyboard configuration for pt-br in this image, if you wanna change it please run the command bellow
+_INFO: I set keyboard configuration for pt-br in this image, if you wanna change it please run the command bellow_
 
-$dpkg-reconfigure keyboard-configuration
+`$dpkg-reconfigure keyboard-configuration`
 
-INFO: DO NOT SAVE YOUR PASSWORD, for some reason that I don't know(yet) Steam client will doesn't work if you check this option.
+**IMPORTANT:** _DO NOT SAVE YOUR PASSWORD, for some reason that I don't know(yet) Steam client will doesn't work if you check this option._
 
-ENJOY IT!! Any suggestions, please let me to know.
-
+**ENJOY IT!!** Any suggestions, please let me to know.
