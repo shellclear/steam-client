@@ -1,4 +1,4 @@
-Play your favorite games at Steam
+#Play your favorite games at Steam
 
 [![Docker Image CI](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml/badge.svg)](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml)
 
