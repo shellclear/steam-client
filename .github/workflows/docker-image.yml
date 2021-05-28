@@ -3,8 +3,9 @@ name: Docker Image CI
 on:
   push:
     paths:
-      - 'Dockerfile'
       - '!**'
+      - 'Dockerfile'
+
   
 env:
   IMAGE_NAME: steam
