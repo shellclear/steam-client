@@ -1,5 +1,4 @@
 FROM debian:stable
-#testasdasdsad
 
 LABEL maintainer="shellclear@gmail.com" description="Steam, Enjoy your favorite games like a BOSS! :p"
 
@@ -18,7 +17,6 @@ RUN echo "keyboard-configuration keyboard-configuration/layout select " | debcon
 RUN apt-get update && apt-get install -y \
   steam \
   xserver-xorg-video-intel
-  tcpdump
 
 RUN apt-get clean
 
