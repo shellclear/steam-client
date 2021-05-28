@@ -1,5 +1,5 @@
-# Play your favorite games at Steam 
 [![Docker Image CI](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml/badge.svg)](https://github.com/shellclear/steam-client/actions/workflows/docker-image.yml)
+# Play your favorite games at Steam 
 
 This image was built to use a intel video card, so maybe you need to install some other modules if you have a AMD/Nvidia video card. However, if you have a Intel video card it will work perfectly.
 
