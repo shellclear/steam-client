@@ -1,5 +1,4 @@
 FROM debian:stable
-# test
 
 LABEL maintainer="shellclear@gmail.com" description="Steam, Enjoy your favorite games like a BOSS! :p"
 
